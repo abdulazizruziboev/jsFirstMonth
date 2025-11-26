@@ -90,14 +90,13 @@
 //   { name: "Desk", tags: "furniture,office" },
 //   { name: "Monitor", tags: "electronics,displays" },
 // ];
-// function getElectronicsProducts(arr){
-//     let x = arr.map(el=>{
-//         let y = el.tags.split(",");
-//         let result = y.filter(el => {
-//             if(y.includes("electronics")) return el;
-//         });
-//         console.log(result);
+// function getElectronicsProducts(arr) {
+//     arr = arr.filter(el => {
+//         el = el.tags.split(",");
+//         if(el.includes("electronics")) return true;
+//         else false;
 //     });
+//     console.log(arr);
 // };
 // getElectronicsProducts(products);
 ///////////////////////////////////////////////////////////////
